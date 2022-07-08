@@ -1,13 +1,13 @@
-package com.desafio.indicafilme;
+package br.com.sensedia.indicadorfilmes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IndicafilmeApplication {
+public class IndicadorfilmesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IndicafilmeApplication.class, args);
+		SpringApplication.run(IndicadorfilmesApplication.class, args);
 	}
 
 }
