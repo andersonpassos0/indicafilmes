@@ -12,15 +12,14 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @RequiredArgsConstructor
 public class ClimaAtualController implements ClimaAtualAPI{
-
 	private ClimaAtualApplicationService climaAtualApplicationService;
 
 	@Override
 	public ClimaAtualResponse climaAtual(@Valid ClimaAtualRequest climaAtualRequest) {
 		log.info("[start] CController - ClimaAtualResponse");
-		ClimaAtualResponse climaAtual = climaAtualApplicationService.verificaClimaAtual(climaAtualRequest);
+//		ClimaAtualResponse climaAtual = climaAtualApplicationService.verificaClimaAtual(climaAtualRequest);
 		log.info("[finish] CController - ClimaAtualResponse");
-		return climaAtual;
+		return null;
 	}
 
 }

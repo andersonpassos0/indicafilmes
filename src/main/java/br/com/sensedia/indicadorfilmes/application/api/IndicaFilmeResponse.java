@@ -1,5 +1,9 @@
 package br.com.sensedia.indicadorfilmes.application.api;
 
-public class IndicaFilmeResponse {
+import lombok.Value;
 
+@Value
+public class IndicaFilmeResponse {
+	private String genero;
+	private String nome;
 }
