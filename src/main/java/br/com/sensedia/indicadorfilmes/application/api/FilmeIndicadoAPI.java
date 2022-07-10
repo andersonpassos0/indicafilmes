@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/v1/indicafilme")
-public interface IndicaFilmeAPI {
+@RequestMapping(value = "/v1/filmeindicado")
+public interface FilmeIndicadoAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	IndicaFilmeResponse indicaFilme(@RequestBody @Valid IndicaFilmeRequest indicaFilmeRequest);
+	FilmeIndicadoResponse filmeIndicado(@RequestBody @Valid FilmeIndicadoRequest filmeIndicadoRequest);
 
 }
