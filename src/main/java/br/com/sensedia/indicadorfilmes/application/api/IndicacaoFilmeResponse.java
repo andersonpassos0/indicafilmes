@@ -3,7 +3,7 @@ package br.com.sensedia.indicadorfilmes.application.api;
 import lombok.Value;
 
 @Value
-public class IndicaFilmeResponse {
+public class IndicacaoFilmeResponse {
 	private String genero;
 	private String nome;
 }

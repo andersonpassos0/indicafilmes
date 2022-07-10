@@ -10,12 +10,14 @@ import lombok.extern.log4j.Log4j2;
 @RestController
 @Log4j2
 @RequiredArgsConstructor
-public class FilmeIndicadoController implements FilmeIndicadoAPI {
+public class IndicadorDeFilmeController implements IndicadorDeFilmeAPI {
 	
 	@Override
-	public FilmeIndicadoResponse filmeIndicado(@Valid FilmeIndicadoRequest filmeIndicadoRequest) {
+	public IndicacaoFilmeResponse filmeIndicado(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] FilmeIndicadoController - FilmeIndicadoResponse");
 
+//		#### Logica indicacao ####
+		
 		log.info("[finish] FilmeIndicadoController - FilmeIndicadoResponse");
 		return null;
 	}

@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/v1/climaatual")
-public interface ClimaAtualAPI {
+@RequestMapping(value = "/v1/indicacaofilme")
+public interface IndicadorDeFilmeAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	ClimaAtualResponse climaAtual(@RequestBody @Valid ClimaAtualRequest climaAtualRequest );
+	IndicacaoFilmeResponse filmeIndicado(@RequestBody @Valid IndicacaoFilmeRequest indicacaoFilmeRequest);
+
 }
