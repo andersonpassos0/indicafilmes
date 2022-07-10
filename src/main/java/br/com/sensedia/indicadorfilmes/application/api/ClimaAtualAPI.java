@@ -14,6 +14,5 @@ import org.springframework.web.bind.annotation.RestController;
 public interface ClimaAtualAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	ClimaAtualResponse climaAtual(@RequestBody @Valid ClimaAtualRequest climaAtualRequest);
-	
+	ClimaAtualResponse climaAtual(@RequestBody @Valid ClimaAtualRequest climaAtualRequest );
 }

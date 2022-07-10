@@ -7,6 +7,6 @@ import br.com.sensedia.indicadorfilmes.application.api.ClimaAtualResponse;
 
 public interface ClimaAtualApplicationService {
 
-	ClimaAtualResponse verificaClimaAtual(@Valid ClimaAtualRequest climaAtualRequest);
+	ClimaAtualResponse verificaClima(@Valid ClimaAtualRequest climaAtualRequest);
 
 }
