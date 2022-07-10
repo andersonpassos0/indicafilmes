@@ -7,5 +7,6 @@ import lombok.Setter;
 @Setter
 public class ClimaAtual {
 	private Integer cep = 45807000;
+	private Integer clima = 35;
 
 }
