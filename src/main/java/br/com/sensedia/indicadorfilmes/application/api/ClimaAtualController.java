@@ -13,7 +13,7 @@ import lombok.extern.log4j.Log4j2;
 @RequiredArgsConstructor
 public class ClimaAtualController implements ClimaAtualAPI{
 
-	private final ClimaAtualApplicationService climaAtualApplicationService;
+	private ClimaAtualApplicationService climaAtualApplicationService;
 
 	@Override
 	public ClimaAtualResponse climaAtual(@Valid ClimaAtualRequest climaAtualRequest) {

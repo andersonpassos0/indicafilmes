@@ -1,12 +1,13 @@
 package br.com.sensedia.indicadorfilmes.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 public class ClimaAtual {
-	private Integer cep = 45807000;
-	private Integer clima = 35;
+	private String cep;
 
 }
