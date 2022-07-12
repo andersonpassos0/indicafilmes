@@ -4,6 +4,5 @@ import lombok.Value;
 
 @Value
 public class IndicacaoFilmeRequest {
-	private String genero;
-	private String nome;
+	private String nomeCcidade;
 }

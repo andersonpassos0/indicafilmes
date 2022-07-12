@@ -1,5 +1,7 @@
 package br.com.sensedia.indicadorfilmes.application.api;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
@@ -14,6 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public interface IndicadorDeFilmeAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	IndicacaoFilmeResponse filmeIndicado(@RequestBody @Valid IndicacaoFilmeRequest indicacaoFilmeRequest);
+	List<IndicacaoFilmeResponse> filmeIndicado(@RequestBody @Valid IndicacaoFilmeRequest indicacaoFilmeRequest);
 
 }
