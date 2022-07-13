@@ -3,7 +3,6 @@ package br.com.sensedia.indicadorfilmes.domain;
 import java.util.stream.Stream;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 public enum ClassificacaoClimaEnum {
@@ -22,8 +21,17 @@ public enum ClassificacaoClimaEnum {
 	this.max = max;
 	}
 	
+	public static String buscaClassificacaoPorTemperatura(Integer temperatura, Integer min, Integer max) {
+		String classificacaoClima = ClassificacaoClimaEnum.stream()
+			.filter(c -> c.getMin() >= min && c.getMax() < max)
+			.toString();
+		return classificacaoClima;
+	}
+	
+	
 	public static Stream<ClassificacaoClimaEnum> stream(){
 		return Stream.of(ClassificacaoClimaEnum.values());
 	}
+	
 	
 }

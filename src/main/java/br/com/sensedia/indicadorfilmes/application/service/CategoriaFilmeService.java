@@ -6,7 +6,7 @@ public class CategoriaFilmeService {
 	
 	public CategoriaFilmeService() {
 		ClassificacaoClimaEnum.stream()
-		.filter(d -> d.getMax().equals(0))
-		.toString();
+		.filter(t -> t.getMax() < 20)
+		.findFirst();
 	}
 }
