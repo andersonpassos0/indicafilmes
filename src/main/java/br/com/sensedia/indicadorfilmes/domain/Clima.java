@@ -8,12 +8,4 @@ import lombok.Setter;
 public class Clima {
 	private Integer temperatura;
 	
-	
-//	public ClassificacaoClimaEnum getClassificacaoClima() {
-//		ClassificacaoClimaEnum.EnumSet.range(ClassificacaoClimaEnum.FRIO_GLACIAL, ClassificacaoClimaEnum.AGRADAVEL);
-//		return classificacaoClima;
-//	}
-	
-	
-	
 }
