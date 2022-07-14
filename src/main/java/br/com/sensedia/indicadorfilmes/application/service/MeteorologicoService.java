@@ -2,8 +2,11 @@ package br.com.sensedia.indicadorfilmes.application.service;
 
 import java.util.Random;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 public class MeteorologicoService {
 	
+	@GetMapping(value = "/climaatual")
 	public Integer meteorologico() {
 		Random random = new Random();
 		Integer temperatura = (random.nextInt(80)-20);
