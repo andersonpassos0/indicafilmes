@@ -18,17 +18,17 @@ public class IndicadorDeFilmeController implements IndicadorDeFilmeAPI {
 	@Override
 	public List<IndicacaoFilmeResponse> filmeIndicado(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeController - IndicacaoFilmeResponse");
-
+		IndicadorDeFilmeService.buscaIndicacaoDeFilme(indicacaoFilmeRequest); 
 		log.info("[finish] IndicadorDeFilmeController - IndicacaoFilmeResponse");
 		return null;
 	}
 
-	@Override
-	public IndicadorDeFilmeService indicadorDeFilme(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
-		log.info("[start] IndicadorDeFilmeController - IndicadorDeFilmeService");
-
-		log.info("[finish] IndicadorDeFilmeController - IndicadorDeFilmeService");
-		return null;
-	}
-
+//	@Override
+//	public IndicadorDeFilmeService indicadorDeFilme(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
+//		log.info("[start] IndicadorDeFilmeController - IndicadorDeFilmeService");
+//
+//		log.info("[finish] IndicadorDeFilmeController - IndicadorDeFilmeService");
+//		return null;
+//	}
+	
 }

@@ -2,14 +2,19 @@ package br.com.sensedia.indicadorfilmes.application.service;
 
 import java.util.Random;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Service;
 
-public class MeteorologicoService {
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
+@Service
+public class ClimaService {
 	
-	@GetMapping(value = "/climaatual")
-	public Integer meteorologico() {
+	public Integer buscaTemperaturaAtualAtravesIndicacaoFilmeRequest() {
+		log.info("[start] ClimaService - buscaTemperaturaAtualAtravesIndicacaoFilmeRequest");
 		Random random = new Random();
 		Integer temperatura = (random.nextInt(80)-20);
+		log.info("[finish] ClimaService - buscaTemperaturaAtualAtravesIndicacaoFilmeRequest");
 		return temperatura;
 	}
 	

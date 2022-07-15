@@ -1,6 +1,6 @@
 server:
  servlet:
-    context-path: /indicadorfilmes/api/v1/filmes/indicacao
+    context-path: /indicadorfilmes/api
  
 spring:
   datasource:
