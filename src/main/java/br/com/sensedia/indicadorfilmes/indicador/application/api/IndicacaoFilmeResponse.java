@@ -2,8 +2,8 @@ package br.com.sensedia.indicadorfilmes.indicador.application.api;
 
 import java.util.List;
 
+import br.com.sensedia.indicadorfilmes.categoriafilme.domain.CategoriaFilmeEnum;
 import br.com.sensedia.indicadorfilmes.filme.domain.Filme;
-import br.com.sensedia.indicadorfilmes.indicador.domain.CategoriaFilmeEnum;
 import lombok.Value;
 
 @Value

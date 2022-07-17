@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 import br.com.sensedia.indicadorfilmes.categoriafilme.application.service.CategoriaFilmeService;
 import br.com.sensedia.indicadorfilmes.categoriafilme.domain.CategoriaFilme;
 import br.com.sensedia.indicadorfilmes.clima.application.service.ClimaService;
+import br.com.sensedia.indicadorfilmes.clima.domain.ClassificacaoClimaEnum;
 import br.com.sensedia.indicadorfilmes.filme.application.service.FilmeService;
 import br.com.sensedia.indicadorfilmes.filme.domain.Filme;
 import br.com.sensedia.indicadorfilmes.indicador.application.api.IndicacaoFilmeRequest;
 import br.com.sensedia.indicadorfilmes.indicador.application.api.IndicacaoFilmeResponse;
-import br.com.sensedia.indicadorfilmes.indicador.domain.ClassificacaoClimaEnum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 

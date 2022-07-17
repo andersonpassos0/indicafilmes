@@ -1,4 +1,4 @@
-package br.com.sensedia.indicadorfilmes.indicador.domain;
+package br.com.sensedia.indicadorfilmes.clima.domain;
 
 import lombok.Getter;
 
