@@ -27,7 +27,7 @@ public class FilmeClientInfraAPI implements FilmeClientAPI {
 		NowPlayingMoviesResponse nowPlayingMovies = theMovieDataBaseClientFeignAPI.getNowPlayingMovies(apiKey, language, categoriaFilme.getIdGenre());
 		log.info("Now Playing Movies: {}", nowPlayingMovies);
 		log.info("[finish] FilmeClienteInfraAPI - buscaFilmesEmCartazAtravesCategoriaFilme");
-		return null;
+		return Filme.converte(nowPlayingMovies, categoriaFilme.getCategoria());
 	}
 
 	@Autowired

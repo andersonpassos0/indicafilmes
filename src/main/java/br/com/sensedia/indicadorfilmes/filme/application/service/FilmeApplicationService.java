@@ -13,7 +13,7 @@ import lombok.extern.log4j.Log4j2;
 @RequiredArgsConstructor
 @Log4j2
 public class FilmeApplicationService implements FilmeService {
-	private FilmeClientAPI filmeClientAPI;
+	private final FilmeClientAPI filmeClientAPI;
 
 	@Override
 	public List<Filme> buscaFilmesEmCartazAtravesCategoriaFilme(CategoriaFilme categoriaFilme) {

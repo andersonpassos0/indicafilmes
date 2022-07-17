@@ -2,10 +2,10 @@ package br.com.sensedia.indicadorfilmes.filme.infra;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import lombok.Value;
+import lombok.Data;
 
-@Value
-public class Movies {
+@Data
+public class Movie {
 	@JsonProperty("title")
 	private String title;
 	@JsonProperty("original_title")
