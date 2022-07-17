@@ -16,10 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public interface IndicadorDeFilmeAPI {
 	
 	@PostMapping
-	@ResponseStatus(code = HttpStatus.CREATED)
+	@ResponseStatus(code = HttpStatus.OK)
 	List<IndicacaoFilmeResponse> filmeIndicado(@RequestBody @Valid IndicacaoFilmeRequest indicacaoFilmeRequest);
-	
-//	@PostMapping
-//	@ResponseStatus(code = HttpStatus.OK)
-//	IndicadorDeFilmeService indicadorDeFilme(@RequestBody @Valid IndicacaoFilmeRequest indicacaoFilmeRequest);
 }

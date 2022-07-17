@@ -16,14 +16,15 @@ import lombok.extern.log4j.Log4j2;
 @RequiredArgsConstructor
 public class IndicadorDeFilmeController implements IndicadorDeFilmeAPI {
 
-	IndicadorDeFilmeService indicadorDeFilmeService = new IndicadorDeFilmeService();
+//	IndicadorDeFilmeService indicadorDeFilmeService = new IndicadorDeFilmeService();
+	private final IndicadorDeFilmeService indicadorDeFilmeService;
 	
 	@Override
 	public List<IndicacaoFilmeResponse> filmeIndicado(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeController - IndicacaoFilmeResponse");
 		indicadorDeFilmeService.buscaIndicacaoDeFilme(indicacaoFilmeRequest); 
 		log.info("[finish] IndicadorDeFilmeController - IndicacaoFilmeResponse");
-		return null;
+		return (List<IndicacaoFilmeResponse>) indicadorDeFilmeService;
 	}
 
 //	@Override
