@@ -14,11 +14,11 @@ import lombok.extern.log4j.Log4j2;
 @Service
 @RequiredArgsConstructor
 public class IndicadorDeFilmeService {
-	private final ClimaService climaService;
+	private final ClimaRandomicoService climaRandomicoService;
 	
 	public List<IndicacaoFilmeResponse> buscaIndicacaoDeFilme(IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeService - ClassificacaoClimaEnum");
-		Integer temperatura = climaService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(indicacaoFilmeRequest);
+		Integer temperatura = climaRandomicoService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(indicacaoFilmeRequest);
 		System.out.println("A temperatura definida foi: " + temperatura + ".");
 		ClassificacaoClimaEnum indicacaoEncontrada = ClassificacaoClimaEnum.buscaClassificacaoPorTemperatura(temperatura);
 		System.out.println("O genero do filme devolvido por ClassificacaoClimaEnum foi: " + indicacaoEncontrada + ".");
