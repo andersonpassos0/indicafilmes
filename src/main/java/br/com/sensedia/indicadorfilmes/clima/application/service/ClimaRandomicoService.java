@@ -1,4 +1,4 @@
-package br.com.sensedia.indicadorfilmes.indicador.application.service;
+package br.com.sensedia.indicadorfilmes.clima.application.service;
 
 import java.util.Random;
 
