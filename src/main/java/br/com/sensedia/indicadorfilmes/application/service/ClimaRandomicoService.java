@@ -22,16 +22,3 @@ public class ClimaRandomicoService implements ClimaService {
 		return temperatura;
 	}
 }
-	
-
-
-
-
-
-//	@GetMapping (value = "/climaatual")
-//	public Object[] buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(){
-//		String url = "https://api.openweathermap.org/data/3.0/onecall/timemachine?lat=-16.366690&lon=-39.579242&dt={time}&appid=b041a00c2b38ca9a92aa12873f48add2";
-//		RestTemplate restTemplate = new RestTemplate();
-//		Object[] temperatura = restTemplate.getForObject(url, Object[].class);
-//		return temperatura;
-//	}

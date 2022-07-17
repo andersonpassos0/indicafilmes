@@ -19,9 +19,7 @@ public class IndicadorDeFilmeService {
 	public List<IndicacaoFilmeResponse> buscaIndicacaoDeFilme(IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeService - ClassificacaoClimaEnum");
 		Integer temperatura = climaRandomicoService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(indicacaoFilmeRequest);
-		System.out.println("A temperatura definida foi: " + temperatura + ".");
-		ClassificacaoClimaEnum indicacaoEncontrada = ClassificacaoClimaEnum.buscaClassificacaoPorTemperatura(temperatura);
-		System.out.println("O genero do filme devolvido por ClassificacaoClimaEnum foi: " + indicacaoEncontrada + ".");
+		ClassificacaoClimaEnum classificacaoClimaAtual = ClassificacaoClimaEnum.buscaClassificacaoPorTemperatura(temperatura);
 		log.info("[finish] IndicadorDeFilmeService - ClassificacaoClimaEnum");
 		return null;
 	}
