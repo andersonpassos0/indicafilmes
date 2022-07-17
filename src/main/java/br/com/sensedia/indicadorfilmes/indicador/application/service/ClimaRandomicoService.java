@@ -1,10 +1,10 @@
-package br.com.sensedia.indicadorfilmes.application.service;
+package br.com.sensedia.indicadorfilmes.indicador.application.service;
 
 import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
-import br.com.sensedia.indicadorfilmes.application.api.IndicacaoFilmeRequest;
+import br.com.sensedia.indicadorfilmes.indicador.application.api.IndicacaoFilmeRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 

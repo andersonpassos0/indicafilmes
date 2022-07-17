@@ -1,4 +1,4 @@
-package br.com.sensedia.indicadorfilmes.domain;
+package br.com.sensedia.indicadorfilmes.indicador.domain;
 
 import lombok.Getter;
 

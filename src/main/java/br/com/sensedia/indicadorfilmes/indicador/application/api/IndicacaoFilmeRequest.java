@@ -1,4 +1,4 @@
-package br.com.sensedia.indicadorfilmes.application.api;
+package br.com.sensedia.indicadorfilmes.indicador.application.api;
 
 import lombok.Value;
 

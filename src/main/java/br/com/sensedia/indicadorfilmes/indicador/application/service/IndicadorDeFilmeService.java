@@ -1,12 +1,12 @@
-package br.com.sensedia.indicadorfilmes.application.service;
+package br.com.sensedia.indicadorfilmes.indicador.application.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import br.com.sensedia.indicadorfilmes.application.api.IndicacaoFilmeRequest;
-import br.com.sensedia.indicadorfilmes.application.api.IndicacaoFilmeResponse;
-import br.com.sensedia.indicadorfilmes.domain.ClassificacaoClimaEnum;
+import br.com.sensedia.indicadorfilmes.indicador.application.api.IndicacaoFilmeRequest;
+import br.com.sensedia.indicadorfilmes.indicador.application.api.IndicacaoFilmeResponse;
+import br.com.sensedia.indicadorfilmes.indicador.domain.ClassificacaoClimaEnum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 

@@ -1,4 +1,4 @@
-package br.com.sensedia.indicadorfilmes.application.api;
+package br.com.sensedia.indicadorfilmes.indicador.application.api;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.validation.Valid;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.sensedia.indicadorfilmes.application.service.IndicadorDeFilmeService;
+import br.com.sensedia.indicadorfilmes.indicador.application.service.IndicadorDeFilmeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
