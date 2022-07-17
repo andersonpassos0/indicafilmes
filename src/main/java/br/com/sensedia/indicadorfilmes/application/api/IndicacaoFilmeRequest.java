@@ -5,4 +5,5 @@ import lombok.Value;
 @Value
 public class IndicacaoFilmeRequest {
 	private String nomeCidade;
+	private String coordenadaGeografica;
 }
