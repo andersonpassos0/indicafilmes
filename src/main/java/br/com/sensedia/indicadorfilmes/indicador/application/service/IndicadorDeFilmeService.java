@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.sensedia.indicadorfilmes.categoriafilme.application.service.CategoriaFilmeService;
 import br.com.sensedia.indicadorfilmes.categoriafilme.domain.CategoriaFilme;
+import br.com.sensedia.indicadorfilmes.categoriafilme.domain.CategoriaFilmeEnum;
 import br.com.sensedia.indicadorfilmes.clima.application.service.ClimaService;
 import br.com.sensedia.indicadorfilmes.clima.domain.ClassificacaoClimaEnum;
 import br.com.sensedia.indicadorfilmes.filme.application.service.FilmeService;
@@ -27,7 +28,8 @@ public class IndicadorDeFilmeService {
 		log.info("[start] IndicadorDeFilmeService - ClassificacaoClimaEnum");
 		Integer temperatura = climaService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(indicacaoFilmeRequest);
 		ClassificacaoClimaEnum classificacaoClimaAtual = ClassificacaoClimaEnum.buscaClassificacaoPorTemperatura(temperatura);
-		CategoriaFilme categoriaFilme = categoriaFilmeService.buscaCategoriaAtravesClassificacaoClima(classificacaoClimaAtual);
+//		CategoriaFilme categoriaFilme = categoriaFilmeService.buscaCategoriaAtravesClassificacaoClima(classificacaoClimaAtual);
+		CategoriaFilme categoriaFilme = CategoriaFilme.builder().classificacaoClima(classificacaoClimaAtual).categoria(CategoriaFilmeEnum.ACAO).build();
 		List<Filme> filmesEmCartaz = filmeService.buscaFilmesEmCartazAtravesCategoriaFilme(categoriaFilme);
 		log.info("[finish] IndicadorDeFilmeService - ClassificacaoClimaEnum");
 		return IndicacaoFilmeResponse.converte(filmesEmCartaz);

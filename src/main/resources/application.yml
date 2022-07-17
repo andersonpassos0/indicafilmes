@@ -15,7 +15,11 @@ spring:
       path: /h2-console
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    
-    springdoc:
-      swagger-ui:
-        path: /swagger
+   
+  springdoc:
+    swagger-ui:
+      path: /swagger
+      
+theMovieDataBase:
+  language: ${LANGUAGE:pt-BR}
+  apiKey: ${API_KEY:d6145158fe7e2e657edb8b1dbf209844}
