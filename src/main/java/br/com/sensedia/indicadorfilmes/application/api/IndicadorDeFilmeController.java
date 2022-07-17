@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.sensedia.indicadorfilmes.application.service.IndicadorDeFilmeService;
+import br.com.sensedia.indicadorfilmes.domain.ClassificacaoClimaEnum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
@@ -14,11 +15,13 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @RequiredArgsConstructor
 public class IndicadorDeFilmeController implements IndicadorDeFilmeAPI {
+
+	IndicadorDeFilmeService indicadorDeFilmeService = new IndicadorDeFilmeService();
 	
 	@Override
 	public List<IndicacaoFilmeResponse> filmeIndicado(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeController - IndicacaoFilmeResponse");
-		IndicadorDeFilmeService.buscaIndicacaoDeFilme(indicacaoFilmeRequest); 
+		indicadorDeFilmeService.buscaIndicacaoDeFilme(indicacaoFilmeRequest); 
 		log.info("[finish] IndicadorDeFilmeController - IndicacaoFilmeResponse");
 		return null;
 	}
@@ -26,9 +29,9 @@ public class IndicadorDeFilmeController implements IndicadorDeFilmeAPI {
 //	@Override
 //	public IndicadorDeFilmeService indicadorDeFilme(@Valid IndicacaoFilmeRequest indicacaoFilmeRequest) {
 //		log.info("[start] IndicadorDeFilmeController - IndicadorDeFilmeService");
-//
+//		IndicacaoFilmeResponse indicacaoFilme = indicadorDeFilmeService.buscaIndicacaoDeFilme(indicacaoFilmeRequest); 
 //		log.info("[finish] IndicadorDeFilmeController - IndicadorDeFilmeService");
-//		return null;
+//		return indicacaoFilme;
 //	}
 	
 }

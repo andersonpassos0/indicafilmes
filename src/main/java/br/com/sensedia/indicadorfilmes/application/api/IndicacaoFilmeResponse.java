@@ -5,4 +5,5 @@ import lombok.Value;
 @Value
 public class IndicacaoFilmeResponse {
 	private String nomeCidade;
+	private Integer temperatura;
 }

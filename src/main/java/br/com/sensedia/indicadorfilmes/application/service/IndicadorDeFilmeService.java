@@ -16,12 +16,13 @@ public class IndicadorDeFilmeService {
 	
 	private static ClimaService climaService;
 	
-	public static ClassificacaoClimaEnum buscaIndicacaoDeFilme(IndicacaoFilmeRequest indicacaoFilmeRequest) {
+	public ClassificacaoClimaEnum buscaIndicacaoDeFilme(IndicacaoFilmeRequest indicacaoFilmeRequest) {
 		log.info("[start] IndicadorDeFilmeService - ClassificacaoClimaEnum");
-		Integer temperatura = climaService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest();
+		Integer temperatura = climaService.buscaTemperaturaAtualAtravesIndicacaoFilmeRequest(indicacaoFilmeRequest);
+		System.out.println("A temperatura definida foi: " + temperatura + ".");
 		ClassificacaoClimaEnum indicacaoEncontrada = ClassificacaoClimaEnum.buscaClassificacaoPorTemperatura(temperatura);
+		System.out.println("O genero do filme devolvido por ClassificacaoClimaEnum foi: " + indicacaoEncontrada + ".");
 		log.info("[finish] IndicadorDeFilmeService - ClassificacaoClimaEnum");
-		System.out.println(indicacaoEncontrada);
 		return indicacaoEncontrada;
 	}
 }
