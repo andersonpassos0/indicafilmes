@@ -29,6 +29,6 @@ public class IndicadorDeFilmeService {
 		CategoriaFilme categoriaFilme = categoriaFilmeService.buscaCategoriaAtravesClassificacaoClima(classificacaoClimaAtual);
 		List<Filme> filmesEmCartaz = filmeService.buscaFilmesEmCartazAtravesCategoriaFilme(categoriaFilme);
 		log.info("[finish] IndicadorDeFilmeService - ClassificacaoClimaEnum");
-		return null;
+		return IndicacaoFilmeResponse.converte(filmesEmCartaz);
 	}
 }
