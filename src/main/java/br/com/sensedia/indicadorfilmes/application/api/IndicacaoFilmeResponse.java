@@ -1,9 +1,10 @@
 package br.com.sensedia.indicadorfilmes.application.api;
 
+import br.com.sensedia.indicadorfilmes.domain.CategoriaFilmeEnum;
 import lombok.Value;
 
 @Value
 public class IndicacaoFilmeResponse {
-	private String nomeCidade;
-	private Integer temperatura;
+	private String titulo;
+	private CategoriaFilmeEnum categoria;
 }
